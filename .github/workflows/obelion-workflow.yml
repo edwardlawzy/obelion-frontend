@@ -39,7 +39,7 @@ jobs:
                   - "3001:3001"
             EOF
             #sudo docker compose -f docker-compose.yml down
-            sudo docker stop $(docker ps -q)
+            sudo docker stop $(sudo docker ps -q)
             sleep 5
             sudo docker compose -f docker-compose.yml up -d
             echo "Deployment of Uptime Kuma complete."
