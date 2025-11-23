@@ -44,7 +44,7 @@ jobs:
                 ports:
                   - "3001:3001"
             EOF
-            sudo docker-compose down
-            
-            sudo docker-compose up -d
+            sudo docker compose -f docker-compose.yml down
+            sleep 1
+            sudo docker compose -f docker-compose.yml up -d
             echo "Deployment of Uptime Kuma complete."
