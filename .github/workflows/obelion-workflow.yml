@@ -1,9 +1,8 @@
 name: Frontend CI/CD (Uptime Kuma)
-#
+
 on:
   push:
     branches: ["master"]
-#
 
 jobs:
   build_and_deploy:
@@ -19,10 +18,6 @@ jobs:
 
       - name: 2. Build Step (Placeholder)
         run: echo "building frontend application..."
-
-      - name: 3. Configure Docker Compose File
-        run: |
-
 
       - name: 4. Deployment via SSH to Frontend Server
         uses: appleboy/ssh-action@v1.0.3
